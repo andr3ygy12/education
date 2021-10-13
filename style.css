@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.header-main {
+  width: 100%;
+  /* position: sticky; */
+  /* top: 1rem; */
+  /* background-color: sandybrown; */
+    background-color: #9A4D79;
+}
+
+.nav-header,
+.ul-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.ul-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.list-item {
+  padding: 1rem;
+}
+
+.link-item {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/logo.png");
+  background-size:200% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blur-like {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+h1 {
+  font-size: 15vw;
+  color: #fff;
+  text-align: center;
+}
+
+.first-section{
+    padding: .5rem;
+}
+
+.first-section h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 1rem 0;
+}
+
+.sections img{
+    border-radius: 5px;
+}
+
+.icon-up{
+    color: rgb(255, 117, 221);
+    color: #984284;
+    color: #333;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: .5rem;
+    font-size: 2rem;
+}
