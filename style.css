@@ -76,19 +76,21 @@ h1 {
   text-align: center;
 }
 
+
 .first-section,
 .second-section{
+  display: flex;
+  flex-flow: column nowrap;
   padding: 0.5rem;
 }
 
 .second-section{
   padding-bottom: 0;
 }
-.first-section h2,
-.second-section h2{
+.title-text{
   font-size: 2rem;
   text-align: center;
-  margin: 1rem 1rem 0;
+  margin: 0;
 }
 
 .sections img {
@@ -106,6 +108,22 @@ h1 {
   font-size: 2rem;
 }
 
+.bold-span{
+  font-weight: bold;
+}
+
+.text-main p{
+  margin-right: auto;
+
+}
+
+.text-main ol{
+  margin-right: auto;
+  text-align: left;
+  margin-top: 0;
+  padding: 0;
+  list-style-position: inside;
+}
 @media screen and (min-width: 1020px) {
   .icon-up{
     font-size: 3rem;
@@ -125,7 +143,7 @@ h1 {
   }
 
   .sections{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -137,59 +155,72 @@ h1 {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
-    /* margin-left: auto;
-    margin-right: auto; */
-    justify-content: space-between;
-    padding: .5rem;  
-    
+    padding: 1.5rem;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+
   }
   
   .img-main{
     display: flex;
     justify-content: center;
-    /* flex: 1 0 40%; */
+    flex: 0 0 50%;
   }
   .img-main img{
-    width: 90%;
-    height: 90%;
+    width:  100%;
+    height: 100%;
   }
 
   .second-section{
     display: flex;
-    flex-flow: row-reverse nowrap;
+    flex-flow: column nowrap;
     width: 100%;
     /* margin-left: auto;
     margin-right: auto; */
     justify-content: space-around;
-    padding: .5rem;
+    padding: 1rem;
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .second-section-1{
+    padding-top: 0;
   }
 
   .text-main{
-    text-align: center;
-    flex: 0 0 50%;
     padding: 1rem;
+    margin-right: 1rem;
+    /* display: flex;
+    flex-flow: row nowrap; */
+
   }
 
   .text-main p{
     text-align: justify;
   }
 
+  
+  .title-text{
+    text-align: right;
+  }
+  
   .img-main-2{
     display: flex;
     flex-flow: row-reverse;
   }
 
-  .text-main-right,
+  /* .text-main-right,
   .text-main-left{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-  }
+  } */
   .text-main-right{
-    align-items: flex-end;
+    align-items: center;
   }
   .text-main-left{
-    align-items: flex-start;
+    align-items: center;
   }
+
 
 }
